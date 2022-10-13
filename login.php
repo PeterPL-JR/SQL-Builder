@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="styles/styles-login.css">
 </head>
 <body>
-    <div id="container"></div>
+    <div id="container">
+        <div id="logo">
+            <img src="images/icon.png">
+            <div><span>DB Admin</span> - Login</div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,38 @@
+#logo {
+    background-color: #cfd6dd;
+    height: var(--logo-height);
+    width: max-content;
+    padding: 10px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+
+    margin: auto;
+    margin-top: 20px;
+}
+
+:root {
+    --logo-font-size: 60px;
+    --logo-height: 120px;
+}
+
+#logo > img {
+    float: left;
+    width: var(--logo-height);
+    height: var(--logo-height);
+    margin-right: 30px;
+}
+#logo > div {
+    height: var(--logo-height);
+    float: left;
+    font: bold var(--logo-font-size) 'Verdana';
+    line-height: var(--logo-height);
+    color: #363636;
+}
+
+#logo > div > span {
+    outline: solid #8c959d 4px;
+    padding: 10px;
+    background-color: #c3cbd1;
+}
