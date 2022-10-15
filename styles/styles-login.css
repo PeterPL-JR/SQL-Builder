@@ -96,6 +96,9 @@ input {
     font-size: 16px;
     padding: 2px;
 }
+input:read-only {
+    color: gray !important;
+}
 
 button {
     width: 180px;

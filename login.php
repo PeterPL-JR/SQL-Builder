@@ -17,7 +17,7 @@
         <div class="form-panel">
             <div class="name-div">Server</div>
             <div class="input-div">
-                <input type="text" name="server" autocomplete="off">
+                <input type="text" name="server" autocomplete="off" value="localhost" readonly>
             </div>
             <div style="clear: both;"></div>
         </div>
