@@ -84,5 +84,28 @@
         ?>
         <button name="submit-btn">Zaloguj się</button>
     </form>
+    <script>
+        const usernameInput = document.getElementsByName("username")[0];
+        const passwordInput = document.getElementsByName("password")[0];
+        const databaseInput = document.getElementsByName("database")[0];
+        const error = document.querySelector(".error");
+
+        function removeError(event) {
+            if(event.key != "Enter") {
+                error.remove();
+            }
+        }
+
+        usernameInput.onkeydown = function(event) {
+            removeError(event);
+        }
+        passwordInput.onkeydown = function(event) {
+            removeError(event);
+        }
+        databaseInput.onkeydown = function(event) {
+            removeError(event);
+        }
+
+    </script>
 </body>
 </html>
