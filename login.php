@@ -13,5 +13,35 @@
         </div>
         <div id="login-label">Login</div>
     </div>
+    <form method="post">
+        <div class="form-panel">
+            <div class="name-div">Server</div>
+            <div class="input-div">
+                <input type="text" name="server" autocomplete="off">
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="form-panel">
+            <div class="name-div">Username</div>
+            <div class="input-div">
+                <input type="text" name="username" autocomplete="off">
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="form-panel">
+            <div class="name-div">Password</div>
+            <div class="input-div">
+                <input type="password" name="password" autocomplete="off">
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="form-panel">
+            <div class="name-div">Database</div>
+            <div class="input-div">
+                <input type="text" name="database" autocomplete="off">
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </form>
 </body>
 </html>

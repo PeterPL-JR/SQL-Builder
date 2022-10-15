@@ -16,6 +16,7 @@
 :root {
     --logo-font-size: 60px;
     --logo-height: 120px;
+    --panel-height: 45px;
 }
 
 #logo > img {
@@ -52,4 +53,38 @@
     background-color: #e3ebf2;
     border-radius: 10px;
     margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.form-panel {
+    width: max-content;
+    height: var(--panel-height);
+    margin: auto;
+    height: max-content;
+    margin-top: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+div.name-div {
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to right bottom, #e0e0e0, #b8b8b8);
+    float: left;
+    font: bold 25px 'Caladea';
+    line-height: var(--panel-height);
+    padding-left: 30px;
+    color: #363636;
+}
+div.input-div {
+    width: 270px;
+    background-color: #e1e1e1;
+    float: left;
+    line-height: var(--panel-height);
+    text-align: center;
+}
+
+input {
+    font-size: 16px;
+    padding: 2px;
 }
