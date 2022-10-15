@@ -1,8 +1,9 @@
 #logo {
-    background-color: #cfd6dd;
+    background-color: #c9d0d6;
     height: var(--logo-height);
     width: max-content;
     padding: 10px;
+    border: solid #9fa5aa 12px;
 
     padding-left: 40px;
     padding-right: 40px;
@@ -19,7 +20,6 @@
 
 #logo > img {
     float: left;
-    width: var(--logo-height);
     height: var(--logo-height);
     margin-right: 30px;
 }
@@ -35,4 +35,21 @@
     outline: solid #8c959d 4px;
     padding: 10px;
     background-color: #c3cbd1;
+}
+
+#login-label {
+    text-align: center;
+    width: max-content;
+    margin: auto;
+
+    font: bold 40px 'Verdana';
+    border: solid #b3bec9 7px;
+    color: #5b5b5b;
+    padding: 2px;
+
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #e3ebf2;
+    border-radius: 10px;
+    margin-top: 10px;
 }
