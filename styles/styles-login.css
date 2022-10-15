@@ -56,6 +56,10 @@
     margin-bottom: 60px;
 }
 
+form {
+    text-align: center;
+}
+
 .form-panel {
     width: max-content;
     height: var(--panel-height);
@@ -69,17 +73,21 @@
 div.name-div {
     width: 200px;
     height: 100%;
-    background: linear-gradient(to right bottom, #e0e0e0, #b8b8b8);
     float: left;
+    
+    background: linear-gradient(to right bottom, #e0e0e0, #b8b8b8);
     font: bold 25px 'Caladea';
     line-height: var(--panel-height);
-    padding-left: 30px;
     color: #363636;
+    
+    padding-left: 30px;
+    text-align: left;
 }
 div.input-div {
     width: 270px;
-    background-color: #e1e1e1;
     float: left;
+
+    background-color: #e1e1e1;
     line-height: var(--panel-height);
     text-align: center;
 }
@@ -87,4 +95,12 @@ div.input-div {
 input {
     font-size: 16px;
     padding: 2px;
+}
+
+button {
+    width: 180px;
+    margin-top: 25px;
+    font: normal 24px 'Verdana';
+    padding: 4px;
+    cursor: pointer;
 }

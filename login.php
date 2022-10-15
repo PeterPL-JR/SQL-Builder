@@ -42,6 +42,7 @@
             </div>
             <div style="clear: both;"></div>
         </div>
+        <button name="submit-btn">Zaloguj się</button>
     </form>
 </body>
 </html>
