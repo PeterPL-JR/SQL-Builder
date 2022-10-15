@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>SQL Admin</title>
+    <title>SQL Builder</title>
 </head>
 <body>
     <?php
