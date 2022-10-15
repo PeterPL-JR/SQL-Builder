@@ -6,7 +6,7 @@
 </head>
 <body>
     <?php
-        if(!isset($_COOKIE['server']) || !isset($_COOKIE['username']) || !isset($_COOKIE['password']) || !isset($_COOKIE['database'])) {
+        if(!isset($_COOKIE['server']) || !isset($_COOKIE['username']) || !isset($_COOKIE['database'])) {
             header("Location: login.php");
         }
     ?>
