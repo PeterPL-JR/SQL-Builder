@@ -42,29 +42,32 @@
             </div>
             <div style="clear: both;"></div>
         </div>
+        <?php
+        if (isset($_POST['submit-btn'])) {
+            try_login();
+        }
+        function try_login() {
+            $server = $_POST['server'];
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            $database = $_POST['database'];
+
+            try {
+                mysqli_connect($server, $username, $password, $database);
+                setcookie("server", $server);
+                setcookie("username", $username);
+                setcookie("password", $password);
+                setcookie("database", $database);
+                header("Location: index.php");
+            } catch(Exception) {
+                print_error("Odmowa dostępu dla <b>$username</b>@<b>$server</b>");
+            }
+        }
+        function print_error($message) {
+            echo "<p class='error'>$message</p>";
+        }
+        ?>
         <button name="submit-btn">Zaloguj się</button>
     </form>
-
-    <?php
-    if (isset($_POST['submit-btn'])) {
-        tryLogin();
-    }
-    function tryLogin()
-    {
-        $server = $_POST['server'];
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $database = $_POST['database'];
-
-        $connection = mysqli_connect($server, $username, $password, $database);
-        if (!mysqli_errno($connection)) {
-            setcookie("server", $server);
-            setcookie("username", $username);
-            setcookie("password", $password);
-            setcookie("database", $database);
-            header("Location: index.php");
-        }
-    }
-    ?>
 </body>
 </html>

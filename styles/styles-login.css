@@ -99,8 +99,19 @@ input {
 
 button {
     width: 180px;
-    margin-top: 25px;
+    margin-top: 15px;
     font: normal 24px 'Verdana';
     padding: 4px;
     cursor: pointer;
+}
+
+.error {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+
+    background-color: #ffefef;
+    color: red;
+    font: normal 20px 'Caladea';
 }
