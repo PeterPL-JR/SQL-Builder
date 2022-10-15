@@ -24,7 +24,7 @@
         <div class="form-panel">
             <div class="name-div">Username</div>
             <div class="input-div">
-                <input type="text" name="username" autocomplete="off">
+                <input type="text" name="username" autocomplete="off" value="<?php get_default('username');?>">
             </div>
             <div style="clear: both;"></div>
         </div>
@@ -38,7 +38,7 @@
         <div class="form-panel">
             <div class="name-div">Database</div>
             <div class="input-div">
-                <input type="text" name="database" autocomplete="off">
+                <input type="text" name="database" autocomplete="off" value="<?php get_default('database');?>">
             </div>
             <div style="clear: both;"></div>
         </div>
@@ -76,6 +76,10 @@
         }
         function print_error($message) {
             echo "<p class='error'>$message</p>";
+        }
+
+        function get_default($name) {
+            if(isset($_POST[$name])) echo $_POST[$name];
         }
         ?>
         <button name="submit-btn">Zaloguj się</button>
