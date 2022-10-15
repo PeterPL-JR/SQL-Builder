@@ -52,6 +52,17 @@
             $password = $_POST['password'];
             $database = $_POST['database'];
 
+            if(empty($username) && empty($database)) {
+                print_error("Pola '<b>username</b>' i '<b>database</b>' są puste");
+                return;
+            } else if(empty($username)) {
+                print_error("Pole '<b>username</b>' jest puste");
+                return;
+            } else if(empty("$database")) {
+                print_error("Pole '<b>database</b>' jest puste");
+                return;
+            }
+
             try {
                 mysqli_connect($server, $username, $password, $database);
                 setcookie("server", $server);
